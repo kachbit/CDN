@@ -39,7 +39,7 @@ const CaretJS = {
             }
         }
 
-        document.querySelector('#' + input.id + ' + span').innerHTML = '&nbsp;'.repeat(pos + diff) + '<span>█</span>';
+        document.querySelector('#' + input.id + ' + span').innerHTML = '&nbsp;'.repeat(pos + diff) + '<span>â–ˆ</span>';
     },
 
     appendSpan(caret) {
@@ -76,7 +76,7 @@ const CaretJS = {
         window.onload = () => {
             for(var id in CaretJS.carets){
                 CaretJS.carets[id].input.value = '';
-                document.querySelector('#' + CaretJS.carets[id].input.id + ' + span').innerHTML = '<span>█</span>';
+                document.querySelector('#' + CaretJS.carets[id].input.id + ' + span').innerHTML = '<span>â–ˆ</span>';
             }
         };
     }
